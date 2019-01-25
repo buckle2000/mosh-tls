@@ -2,7 +2,7 @@
 import os, sys, pexpect
 
 if len(sys.argv) != 3:
-    print('Usage:', sys.argv[0], '<RHOST> <RPORT>')
+    print(' '.join('Usage:', sys.argv[0], '<RHOST> <RPORT>'))
     exit(1)
 
 RHOST = sys.argv[1]

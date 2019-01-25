@@ -1,0 +1,13 @@
+# Place this under /usr/lib/systemd/user
+
+[Unit]
+Description=Mosh TLS connector
+After=network.target
+
+[Service]
+ExecStart=path/to/server.sh
+# TODO: change path
+
+[Install]
+WantedBy=default.target
+
